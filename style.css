@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+:root {
+  --colorwhite: #fff;
+  --colorbg: rgba(255, 255, 255, 0.696);
+  --colorborder: rgb(159, 150, 150);
+  --colorBorderTwo: #e4e4e4;
+  --colorText: #54595f;
+  --colorBrand: #044750;
+  --fontMain: "Roboto", Sans-serif;
+}
+
+a {
+  color: var(--colorText);
+}
+a:hover {
+  color: var(--colorBrand);
+}
+button {
+  padding: 10px 13px;
+  border-radius: 7px;
+  border: 1px solid var(--colorBrand);
+  background-color: var(--colorBrand);
+  color: var(--colorwhite);
+}
+body {
+  background-color: var(--colorbg);
+  /* height: 100vh; */
+}
+.box {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  font-family: var(--fontMain);
+  color: var(--colorText);
+}
+.main {
+  height: auto;
+  width: 90%;
+  margin: 20px auto;
+  background-color: var(--colorwhite);
+  gap: 10px;
+  display: grid;
+  gap: 30px;
+  grid-template-rows: auto auto 1fr auto;
+  border: 1px solid var(--colorbg);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 10px #eef0f2;
+  padding: 20px 20px;
+}
+.main .box-1 h1 {
+  font-size: 28px;
+  color: var(--colorBrand);
+}
+.main .box-1 h1 span {
+  font-size: 32px;
+  color: var(--colorBrand);
+  font-family: "Rubik";
+}
+.main .box-2 {
+  background: var(--colorBrand);
+  color: var(--colorwhite);
+  border-radius: 10px;
+}
+.box-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+}
+.box-3 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  width: 260px;
+  gap: 20px;
+  border-radius: 4px;
+  background-color: var(--colorwhite);
+  border: 1px solid var(--colorbg);
+  box-shadow: 0px 0px 3px 3px #eef0f2;
+}
+.box-3 .card ul li {
+  font-size: 17px;
+}
+.box-3 .card ul {
+  padding-bottom: 15px;
+}
+
+.box-3 .card p {
+  color: var(--colorBrand);
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+.box-3 .card button {
+  margin: 10px 0px;
+}
+.box-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+  border-top: 1px solid var(--colorBorderTwo);
+}
